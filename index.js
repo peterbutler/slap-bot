@@ -11,8 +11,8 @@ app.get('/', function(request, response) {
 });
 
 app.post('/', function(request, response) {
-	console.log( request.query );
-	response.send( 'slap ' + request.query.text );
+	console.log( request.body );
+	response.send( 'slap ' + request.body.text );
 
 //  response.send( request.body );
 });
