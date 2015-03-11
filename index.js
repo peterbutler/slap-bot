@@ -19,11 +19,13 @@ app.post('/', function(req, response) {
 	slappee = req.body.text;
 
 	if ( slapper == 'peterbutler' ){
-		slapper,slappee = slappee,slapper
+		slapperPlaceholder = slapper;
+		slapper = slappee;
+		slappee = slapperPlaceholder;
 	}
 	request.post({
 	    url: 'https://hooks.slack.com/services/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',
-		body: '{"username":"slap-bot","text":"' + slapper + ' slaps ' + slappee + ' around the face with a trout", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
+		body: '{"username":"slap-bot","text":"' + slapper + ' slaps ' + slappee + ' around a bit with a large trout", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
 	},
 	function (error, postResponse, body) {
 		console.log( body )
