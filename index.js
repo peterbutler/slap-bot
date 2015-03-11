@@ -14,9 +14,16 @@ app.get('/', function(request, response) {
 
 app.post('/', function(req, response) {
 	console.log( req.body );
+
+	slapper = req.body.user_name;
+	slappee = req.body.text;
+
+	if ( slapper == 'peterbutler' ){
+		slappee = 'peterbutler';
+	}
 	request.post({
 	    url: 'https://hooks.slack.com/services/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',
-		body: '{"username":"slap-bot","text":"' + req.body.user_name + ' slaps ' + req.body.text + ' around the face with a trout", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
+		body: '{"username":"slap-bot","text":"' + slapper + ' slaps ' + slappee + ' around the face with a trout", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
 	},
 	function (error, postResponse, body) {
 		console.log( body )
