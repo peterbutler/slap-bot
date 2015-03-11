@@ -16,7 +16,7 @@ app.post('/', function(req, response) {
 	console.log( req.body );
 	request.post({
 	    url: 'https://hooks.slack.com/services/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',
-		body: '{"text":"test slap.", "channel":"' + req.body.channel + '"}',
+		body: '{"text":"test slap.", "channel":"' + req.body.channel_id + '"}',
 	},
 	function (error, postResponse, body) {
 		console.log( body )
