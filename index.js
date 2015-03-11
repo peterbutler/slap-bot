@@ -24,15 +24,57 @@ app.post('/', function(req, response) {
 		slapper = slappee;
 		slappee = slapperPlaceholder;
 	}
+
+        action = [
+              "slaps",  "considers highlighting" , "nudges" , "whacks", "beautifies", "imprints", "whacks", 
+              "bangs" , "spanks", "strikes", "clouts" , "cuffs", "thwacks", "wallops", "smites", "boxes", 
+              "swipes", "belts", "larrups", "socks", "clobbers", "slugs", "forgets", "pokes", "steals", "shreds", 
+              "urges", "accidentally floods", "spills some coffee over", "deletes", "drives over", "makes", 
+              "sends hordes of", "slaps a large trout a bit with" , "rickrolls" , "recites Vogon poetry for" , 
+              "pushes", "beautifies" , "feeds"];
+
+        superlative = [
+              "a fluffy concrete", "a large and terrifyingly cute plush", "a large", "a small", "a concrete", 
+              "a large and pointy", "a large and fearsome", "a cute little", "a large, wet and smelly", 
+              "a large and heavy", "a small and lightweight", "a marble", "a pink", "a terrifyingly small and cute", 
+              "a tiny and bloodstained", "a random", "an enormous", "a medium sized", "a breath taking", 
+              "an extra large", "a huge", "a suspicious", "a terrifying", "a scary", "a horrifying", "an impervious", 
+              "a green", "a blue", "a red", "a pink", "a dirty", "a brown", "a silver", "a golden", "a black", "a yellow", 
+              "a magenta", "an translucent", "a nontransparent", "a mysterious", "a puzzling", "a perplexing", 
+              "a baffling", "a mystifying", "a confusing", "a unfathomable", "an incomprehensible", "an unintelligible", 
+              "a Delphic", "an impenetrable", "an oblique", "an enigmatic", "a cryptic", "a hazy", "a foggy", "a grimy", 
+              "a smeared", "a muddied", "a plain", "a vague", "an irrefutable", "a palpale", "a genuine", "an authentic", 
+              "a real", "a bona fide", "a veritable", "an attested", "a honest-to-goodness", "a kosher", "a natural", 
+              "a stained", "a broken", "a dyed", "a splattered", "a blotched", "a smudged", "a blemished", "a tainted", 
+              "a damaged", "a colorful", "a magnificient", "an amazing", "a sublime", "a superb", "a glorious", 
+              "a tremendous", "a sensational", "a gorgeous", "a grand", "a fabulous"
+               ];
+
+        object = [
+               "kitty","NintendoWii","dolphin","rainbowtrout","SystemSoftware1.0","Imperial-ClassStardestroyer",
+               "macintosh","baseballbat","chessboard","MingVase","donkey","Playstation3","shovel","acarefullyselectedrangeofrandomitems",
+               "stick","theWindows95Buglist","theWindowsMEBuglist","something","goldfish","sledgehammer","trout",
+               "cuttlefish","somethinglargeandheavyfromDell","somethingsmallandlightweightfromApple","Cthulhu'stentacles",
+               "bustofJuliusCaesar","a verse or two of Vogon poetry","a huge wad of belly button fluff","fire and brimstone",
+               "spoon","cotton wool balls","something pink","a mouse cord","a UNIX bible","a Back Street Boys CD",
+               "mIRC 6.01","brick","christmas tree","an army shovel","axe","Khaled Mardam-Bey","a random number of Ninja Turtles",
+               "crowbar","knuckleduster","book","DVD","VHS","flower","tree","shelf","laptop","Macbook","iBook","PowerBook",
+               "MacbookPro","MacbookAir","MacMini","MacPro","iMac","iPhone","iPod","cup","IRC Client","diamond","lamp",
+               "tapestry","stone","rock","sheet of paper","printer","scanner","mobile","figurine","magazine","ball","frog","camel",
+               "dragon","walrus","penguin","giraffe","lion","shelf","wardrobe","lamp","stone","easter egg","pot","trophy",
+               "goblet","yellow snow"
+               ];
+
 	slapMessages = [
-		'shreds %s with a large chainsaw',
-		'sends hords of gold fish over %s',
+                action + ' ' + %s ' ' + 'with' + ' ' + superlative + object,
+		'sends hordes of goldfish over %s',
 		'thwacks %s with a smeared cup',
 		'smites %s with a cryptic object',
 		'steals %s\'s cookies. mwahaha!',
 		'cuffs %s with a broken lamp',
 		'slaps %s around a bit with a large trout',
 	];
+
 
 	slapMessage = slapMessages[ Math.floor( Math.random() * slapMessages.length ) ];
 
