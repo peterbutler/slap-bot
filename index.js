@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
@@ -9,7 +11,10 @@ app.get('/', function(request, response) {
 });
 
 app.post('/', function(request, response) {
-  response.send('Hello World Post!');
+	console.log( request );
+	response.send( 'posted request' );
+
+//  response.send( request.body );
 });
 
 app.listen(app.get('port'), function() {
