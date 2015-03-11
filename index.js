@@ -19,7 +19,7 @@ app.post('/', function(req, response) {
 	slappee = req.body.text;
 
 	if ( slapper == 'peterbutler' ){
-		slappee = 'peterbutler';
+		slapper,slappee = slappee,slapper
 	}
 	request.post({
 	    url: 'https://hooks.slack.com/services/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',
