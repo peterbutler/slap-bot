@@ -56,7 +56,7 @@ app.post('/', function(req, response) {
                "Macbook Pro","Macbook Air","Mac Mini","Mac Pro","iMac","iPhone","iPod","cup","IRC Client","diamond","lamp",
                "tapestry","stone","rock","sheet of paper","printer","scanner","mobile","figurine","magazine","ball","frog","camel",
                "dragon","walrus","penguin","giraffe","lion","shelf","wardrobe","lamp","stone","easter egg","pot","trophy",
-               "goblet","yellow snow","WPiOS","WPAndroid","Spittle cough","MattChat","404 error"
+               "goblet","yellow snow","WPiOS","WPAndroid","Spittle cough","MattChat","404 error","peterbutler/'s head","REST API","WPCLI","Codex"
                ];
 
         randomAction = action[ Math.floor( Math.random() * action.length ) ];
