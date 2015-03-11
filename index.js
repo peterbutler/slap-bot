@@ -46,17 +46,18 @@ app.post('/', function(req, response) {
 
         object = [
                "kitty","Nintendo Wii","dolphin","rainbow trout","SystemSoftware 1.0","Imperial-Class Stardestroyer",
-               "macintosh","baseball bat","chessboard","Ming Vase","donkey","Playstation 3","shovel","a carefully selected range of random items",
+               "macintosh","baseball bat","chessboard","Ming Vase","donkey","Playstation 3","shovel","carefully selected range of random items",
                "stick","the Windows 95 Bug list","the Windows ME Bug list","something","goldfish","sledgehammer","trout",
                "cuttle fish","something large and heavy from Dell","something small and lightweight from Apple","Cthulhu's tentacles",
-               "bust of Julius Caesar","a verse or two of Vogon poetry","a huge wad of belly button fluff","fire and brimstone",
-               "spoon","cotton wool balls","something pink","a mouse cord","a UNIX bible","a Back Street Boys CD",
-               "mIRC 6.01","brick","christmas tree","an army shovel","axe","Khaled Mardam-Bey","a random number of Ninja Turtles",
+               "bust of Julius Caesar","verse or two of Vogon poetry","huge wad of belly button fluff","fire and brimstone",
+               "spoon","cotton wool balls","something pink","mouse cord","UNIX bible","Back Street Boys CD",
+               "mIRC 6.01","brick","christmas tree","army shovel","axe","Khaled Mardam-Bey","random number of Ninja Turtles",
                "crowbar","knuckleduster","book","DVD","VHS","flower","tree","shelf","laptop","Macbook","iBook","PowerBook",
                "Macbook Pro","Macbook Air","Mac Mini","Mac Pro","iMac","iPhone","iPod","cup","IRC Client","diamond","lamp",
                "tapestry","stone","rock","sheet of paper","printer","scanner","mobile","figurine","magazine","ball","frog","camel",
                "dragon","walrus","penguin","giraffe","lion","shelf","wardrobe","lamp","stone","easter egg","pot","trophy",
-               "goblet","yellow snow","WPiOS","WPAndroid","Spittle cough","MattChat","404 error"
+               "goblet","yellow snow","WPiOS","WPAndroid","Spittle cough","MattChat","404 error","Timbuktu bag","fuck off bear","ittybunny hug",
+               "burrito","HR violation",'"wut" look from Karen',"+t +d","flash talk","commit message","#wendycorrect","chav","flash talk"
                ];
 
         randomAction = action[ Math.floor( Math.random() * action.length ) ];
