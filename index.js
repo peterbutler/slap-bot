@@ -38,7 +38,7 @@ app.post('/', function(req, response) {
 
 	request.post({
 	    url: 'https://hooks.slack.com/services/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',
-		body: '{"username":"slap-bot","text":"' + slapper + sprintf( slapMessage, slappee ) +'", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
+		body: '{"username":"slap-bot","text":"' + slapper + ' ' + sprintf( slapMessage, slappee ) +'", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
 	},
 	function (error, postResponse, body) {
 		console.log( body )
