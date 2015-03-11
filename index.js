@@ -76,7 +76,7 @@ app.post('/', function(req, response) {
         }
 
         if ( slapper == 'clauzon' ){
-          randomMessage = 'tries to slap %s, but he was thwarted and got slapped with a ' + randomSuperlative + ' ' + randomObject + ' instead!';
+          randomMessage = 'tries to slap %s, but he was thwarted and got slapped with a ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
         }
 
 	request.post({
