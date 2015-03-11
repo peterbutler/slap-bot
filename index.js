@@ -18,7 +18,7 @@ app.post('/', function(req, response) {
 	slapper = req.body.user_name;
 	slappee = req.body.text;
 
-	if ( slapper == 'peterbutler' ){
+	if ( slapper == 'clauzon' ){
 		slapperPlaceholder = slapper;
 		slapper = slappee;
 		slappee = slapperPlaceholder;
