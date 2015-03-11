@@ -25,27 +25,27 @@ app.post('/', function(req, response) {
 		slappee = slapperPlaceholder;
 	}
 	action = [
-              "slaps",  "considers highlighting" , "nudges" , "whacks", "beautifies", "imprints", "whacks", 
-              "bangs" , "spanks", "strikes", "clouts" , "cuffs", "thwacks", "wallops", "smites", "boxes", 
-              "swipes", "belts", "larrups", "socks", "clobbers", "slugs", "forgets", "pokes", "steals", "shreds", 
-              "urges", "accidentally floods", "spills some coffee over", "deletes", "drives over", "makes", 
-              "sends hordes of" , "rickrolls" , "recites Vogon poetry for" , 
+              "slaps",  "considers highlighting" , "nudges" , "whacks", "beautifies", "imprints", "whacks",
+              "bangs" , "spanks", "strikes", "clouts" , "cuffs", "thwacks", "wallops", "smites", "boxes",
+              "swipes", "belts", "larrups", "socks", "clobbers", "slugs", "forgets", "pokes", "steals", "shreds",
+              "urges", "accidentally floods", "spills some coffee over", "deletes", "drives over", "makes",
+              "sends hordes of" , "rickrolls" , "recites Vogon poetry for" ,
               "pushes", "beautifies" , "feeds"];
 
         superlative = [
-              "a fluffy concrete", "a large and terrifyingly cute plush", "a large", "a small", "a concrete", 
-              "a large and pointy", "a large and fearsome", "a cute little", "a large, wet and smelly", 
-              "a large and heavy", "a small and lightweight", "a marble", "a pink", "a terrifyingly small and cute", 
-              "a tiny and bloodstained", "a random", "an enormous", "a medium sized", "a breath taking", 
-              "an extra large", "a huge", "a suspicious", "a terrifying", "a scary", "a horrifying", "an impervious", 
-              "a green", "a blue", "a red", "a pink", "a dirty", "a brown", "a silver", "a golden", "a black", "a yellow", 
-              "a magenta", "an translucent", "a nontransparent", "a mysterious", "a puzzling", "a perplexing", 
-              "a baffling", "a mystifying", "a confusing", "a unfathomable", "an incomprehensible", "an unintelligible", 
-              "a Delphic", "an impenetrable", "an oblique", "an enigmatic", "a cryptic", "a hazy", "a foggy", "a grimy", 
-              "a smeared", "a muddied", "a plain", "a vague", "an irrefutable", "a palpale", "a genuine", "an authentic", 
-              "a real", "a bona fide", "a veritable", "an attested", "a honest-to-goodness", "a kosher", "a natural", 
-              "a stained", "a broken", "a dyed", "a splattered", "a blotched", "a smudged", "a blemished", "a tainted", 
-              "a damaged", "a colorful", "a magnificient", "an amazing", "a sublime", "a superb", "a glorious", 
+              "a fluffy concrete", "a large and terrifyingly cute plush", "a large", "a small", "a concrete",
+              "a large and pointy", "a large and fearsome", "a cute little", "a large, wet and smelly",
+              "a large and heavy", "a small and lightweight", "a marble", "a pink", "a terrifyingly small and cute",
+              "a tiny and bloodstained", "a random", "an enormous", "a medium sized", "a breath taking",
+              "an extra large", "a huge", "a suspicious", "a terrifying", "a scary", "a horrifying", "an impervious",
+              "a green", "a blue", "a red", "a pink", "a dirty", "a brown", "a silver", "a golden", "a black", "a yellow",
+              "a magenta", "an translucent", "a nontransparent", "a mysterious", "a puzzling", "a perplexing",
+              "a baffling", "a mystifying", "a confusing", "a unfathomable", "an incomprehensible", "an unintelligible",
+              "a Delphic", "an impenetrable", "an oblique", "an enigmatic", "a cryptic", "a hazy", "a foggy", "a grimy",
+              "a smeared", "a muddied", "a plain", "a vague", "an irrefutable", "a palpale", "a genuine", "an authentic",
+              "a real", "a bona fide", "a veritable", "an attested", "a honest-to-goodness", "a kosher", "a natural",
+              "a stained", "a broken", "a dyed", "a splattered", "a blotched", "a smudged", "a blemished", "a tainted",
+              "a damaged", "a colorful", "a magnificient", "an amazing", "a sublime", "a superb", "a glorious",
               "a tremendous", "a sensational", "a gorgeous", "a grand", "a fabulous"
                ];
 
@@ -76,7 +76,7 @@ app.post('/', function(req, response) {
         }
 
         if ( slapper == 'clauzon' ){
-          randomMessage = 'tries to slap %s, but he was thwarted and got slapped with ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
+          randomMessage = 'tries to slap %s, but is thwarted and gets slapped with ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
         }
 
 	request.post({
