@@ -25,7 +25,7 @@ app.post('/', function(req, response) {
               "swipes", "belts", "larrups", "socks", "clobbers", "slugs", "forgets", "pokes", "steals", "shreds",
               "urges", "accidentally floods", "spills some coffee over", "deletes", "drives over", "makes",
               "sends hordes of" , "rickrolls" , "recites Vogon poetry for" ,
-              "pushes", "beautifies" , "feeds"];
+              "pushes", "beautifies" , "feeds" , "pings"];
 
         superlative = [
               "a fluffy concrete", "a large and terrifyingly cute plush", "a large", "a small", "a concrete",
@@ -56,7 +56,7 @@ app.post('/', function(req, response) {
                "Macbook Pro","Macbook Air","Mac Mini","Mac Pro","iMac","iPhone","iPod","cup","IRC Client","diamond","lamp",
                "tapestry","stone","rock","sheet of paper","printer","scanner","mobile","figurine","magazine","ball","frog","camel",
                "dragon","walrus","penguin","giraffe","lion","shelf","wardrobe","lamp","stone","easter egg","pot","trophy",
-               "goblet","yellow snow"
+               "goblet","yellow snow","WPiOS","WPAndroid","Spittle cough","MattChat","404 error"
                ];
 
         randomAction = action[ Math.floor( Math.random() * action.length ) ];
