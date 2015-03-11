@@ -1,3 +1,4 @@
+
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -37,7 +38,7 @@ app.post('/', function(req, response) {
 
 
 	request.post({
-	    url: 'https://hooks.slack.com/services/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',
+	    url: ENV['WEBHOOKURL'],
 		body: '{"username":"slap-bot","text":"' + slapper + ' ' + sprintf( slapMessage, slappee ) +'", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
 	},
 	function (error, postResponse, body) {
