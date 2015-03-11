@@ -72,11 +72,11 @@ app.post('/', function(req, response) {
 	slapYourself = getRandomInt(1,5);
 
         if ( 4 == slapYourself && 'clauzon' != slappee ) {
-          randomMessage = 'tries to slap %s but misses and hits clauzon with a ' + randomSuperlative + ' ' + randomObject + ' instead!';
+          randomMessage = 'tries to slap %s but misses and hits clauzon with ' + randomSuperlative + ' ' + randomObject + ' instead!';
         }
 
         if ( slapper == 'clauzon' ){
-          randomMessage = 'tries to slap %s, but he was thwarted and got slapped with a ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
+          randomMessage = 'tries to slap %s, but he was thwarted and got slapped with ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
         }
 
 	request.post({
