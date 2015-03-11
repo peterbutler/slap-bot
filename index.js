@@ -24,22 +24,55 @@ app.post('/', function(req, response) {
 		slapper = slappee;
 		slappee = slapperPlaceholder;
 	}
-	slapMessages = [
-		'shreds %s with a large chainsaw',
-		'sends hords of gold fish over %s',
-		'thwacks %s with a smeared cup',
-		'smites %s with a cryptic object',
-		'steals %s\'s cookies. mwahaha!',
-		'cuffs %s with a broken lamp',
-		'slaps %s around a bit with a large trout',
-	];
+	action = [
+              "slaps",  "considers highlighting" , "nudges" , "whacks", "beautifies", "imprints", "whacks", 
+              "bangs" , "spanks", "strikes", "clouts" , "cuffs", "thwacks", "wallops", "smites", "boxes", 
+              "swipes", "belts", "larrups", "socks", "clobbers", "slugs", "forgets", "pokes", "steals", "shreds", 
+              "urges", "accidentally floods", "spills some coffee over", "deletes", "drives over", "makes", 
+              "sends hordes of" , "rickrolls" , "recites Vogon poetry for" , 
+              "pushes", "beautifies" , "feeds"];
 
-	slapMessage = slapMessages[ Math.floor( Math.random() * slapMessages.length ) ];
+        superlative = [
+              "a fluffy concrete", "a large and terrifyingly cute plush", "a large", "a small", "a concrete", 
+              "a large and pointy", "a large and fearsome", "a cute little", "a large, wet and smelly", 
+              "a large and heavy", "a small and lightweight", "a marble", "a pink", "a terrifyingly small and cute", 
+              "a tiny and bloodstained", "a random", "an enormous", "a medium sized", "a breath taking", 
+              "an extra large", "a huge", "a suspicious", "a terrifying", "a scary", "a horrifying", "an impervious", 
+              "a green", "a blue", "a red", "a pink", "a dirty", "a brown", "a silver", "a golden", "a black", "a yellow", 
+              "a magenta", "an translucent", "a nontransparent", "a mysterious", "a puzzling", "a perplexing", 
+              "a baffling", "a mystifying", "a confusing", "a unfathomable", "an incomprehensible", "an unintelligible", 
+              "a Delphic", "an impenetrable", "an oblique", "an enigmatic", "a cryptic", "a hazy", "a foggy", "a grimy", 
+              "a smeared", "a muddied", "a plain", "a vague", "an irrefutable", "a palpale", "a genuine", "an authentic", 
+              "a real", "a bona fide", "a veritable", "an attested", "a honest-to-goodness", "a kosher", "a natural", 
+              "a stained", "a broken", "a dyed", "a splattered", "a blotched", "a smudged", "a blemished", "a tainted", 
+              "a damaged", "a colorful", "a magnificient", "an amazing", "a sublime", "a superb", "a glorious", 
+              "a tremendous", "a sensational", "a gorgeous", "a grand", "a fabulous"
+               ];
+
+        object = [
+               "kitty","Nintendo Wii","dolphin","rainbow trout","SystemSoftware 1.0","Imperial-Class Stardestroyer",
+               "macintosh","baseball bat","chessboard","Ming Vase","donkey","Playstation 3","shovel","a carefully selected range of random items",
+               "stick","the Windows 95 Bug list","the Windows ME Bug list","something","goldfish","sledgehammer","trout",
+               "cuttle fish","something large and heavy from Dell","something small and lightweight from Apple","Cthulhu'stentacles",
+               "bust of Julius Caesar","a verse or two of Vogon poetry","a huge wad of belly button fluff","fire and brimstone",
+               "spoon","cotton wool balls","something pink","a mouse cord","a UNIX bible","a Back Street Boys CD",
+               "mIRC 6.01","brick","christmas tree","an army shovel","axe","Khaled Mardam-Bey","a random number of Ninja Turtles",
+               "crowbar","knuckleduster","book","DVD","VHS","flower","tree","shelf","laptop","Macbook","iBook","PowerBook",
+               "Macbook Pro","Macbook Air","Mac Mini","Mac Pro","iMac","iPhone","iPod","cup","IRC Client","diamond","lamp",
+               "tapestry","stone","rock","sheet of paper","printer","scanner","mobile","figurine","magazine","ball","frog","camel",
+               "dragon","walrus","penguin","giraffe","lion","shelf","wardrobe","lamp","stone","easter egg","pot","trophy",
+               "goblet","yellow snow"
+               ];
+
+        randomAction = action[ Math.floor( Math.random() * action.length ) ];
+        randomSuperlative = superlative[ Math.floor( Math.random() * superlative.length ) ];
+        randomObject = object[ Math.floor( Math.random() * object.length ) ];
+        randomMessage = randomAction + ' %s ' + 'with ' + randomSuperlative + ' ' + randomObject;
 
 
 	request.post({
 	    url: process.env.WEBHOOKURL,
-		body: '{"username":"slap-bot","text":"' + slapper + ' ' + sprintf( slapMessage, slappee ) +'", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
+		body: '{"username":"slap-bot","text":"' + slapper + ' ' + sprintf( randomMessage, slappee ) +'", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
 	},
 	function (error, postResponse, body) {
 		console.log( body )
