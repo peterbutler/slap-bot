@@ -19,11 +19,6 @@ app.post('/', function(req, response) {
 	slapper = req.body.user_name;
 	slappee = req.body.text;
 
-	if ( slapper == 'clauzon' ){
-		slapperPlaceholder = slapper;
-		slapper = slappee;
-		slappee = slapperPlaceholder;
-	}
 	action = [
               "slaps",  "considers highlighting" , "nudges" , "whacks", "beautifies", "imprints", "whacks",
               "bangs" , "spanks", "strikes", "clouts" , "cuffs", "thwacks", "wallops", "smites", "boxes",
@@ -53,7 +48,7 @@ app.post('/', function(req, response) {
                "kitty","Nintendo Wii","dolphin","rainbow trout","SystemSoftware 1.0","Imperial-Class Stardestroyer",
                "macintosh","baseball bat","chessboard","Ming Vase","donkey","Playstation 3","shovel","a carefully selected range of random items",
                "stick","the Windows 95 Bug list","the Windows ME Bug list","something","goldfish","sledgehammer","trout",
-               "cuttle fish","something large and heavy from Dell","something small and lightweight from Apple","Cthulhu'stentacles",
+               "cuttle fish","something large and heavy from Dell","something small and lightweight from Apple","Cthulhu's tentacles",
                "bust of Julius Caesar","a verse or two of Vogon poetry","a huge wad of belly button fluff","fire and brimstone",
                "spoon","cotton wool balls","something pink","a mouse cord","a UNIX bible","a Back Street Boys CD",
                "mIRC 6.01","brick","christmas tree","an army shovel","axe","Khaled Mardam-Bey","a random number of Ninja Turtles",
