@@ -69,13 +69,14 @@ app.post('/', function(req, response) {
         randomObject = object[ Math.floor( Math.random() * object.length ) ];
         randomMessage = randomAction + ' %s ' + 'with ' + randomSuperlative + ' ' + randomObject;
 
-	slapYourself = getRandomInt(1,5);
 
-        if ( 4 == slapYourself && 'clauzon' != slappee ) {
+		// 20% of the time, poor chris gets slapped instead
+        if ( Math.random() < .2 && 'clauzon' != slappee ) {
           randomMessage = 'tries to slap %s but misses and hits clauzon with ' + randomSuperlative + ' ' + randomObject + ' instead!';
         }
 
-        if ( slapper == 'clauzon' ){
+		// Chris misses 20% of the time
+        if ( Math.random() < .2 && slapper == 'clauzon' ){
           randomMessage = 'tries to slap %s, but is thwarted and gets slapped with ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
         }
 
@@ -95,10 +96,6 @@ app.post('/', function(req, response) {
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
 });
-
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 function sprintf() {
   //  discuss at: http://phpjs.org/functions/sprintf/
