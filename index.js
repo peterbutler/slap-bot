@@ -78,7 +78,7 @@ app.post('/', function(req, response) {
 
 	request.post({
 	    url: process.env.WEBHOOKURL,
-		body: '{"username":"slap-bot","text":"' + slapper + ' ' + sprintf( randomMessage, slappee ) +'", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '"}',
+		body: '{"username":"slap-bot","text":"' + slapper + ' ' + sprintf( randomMessage, '@' + slappee ) +'", "icon_emoji":":wave:","channel":"' + req.body.channel_id + '","parse":"full"}',
 	},
 	function (error, postResponse, body) {
 		console.log( body )
