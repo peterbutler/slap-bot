@@ -57,7 +57,8 @@ app.post('/', function(req, response) {
                "tapestry","stone","rock","sheet of paper","printer","scanner","mobile","figurine","magazine","ball","frog","camel",
                "dragon","walrus","penguin","giraffe","lion","shelf","wardrobe","lamp","stone","easter egg","pot","trophy",
                "goblet","yellow snow","WPiOS","WPAndroid","Spittle cough","MattChat","404 error","Timbuktu bag","fuck off bear","ittybunny hug",
-               "burrito","HR violation",'"wut" look from Karen',"+t +d","flash talk","commit message","#wendycorrect","chav","flash talk","peterbutler's head","REST API","WPCLI","Codex", ":poop:", ""
+               "burrito","HR violation",'"wut" look from Karen',"+t +d","flash talk","commit message","#wendycorrect","chav","flash talk",
+               "peterbutler's head","REST API","WPCLI","Codex", ":poop:",":cube:",":coolio:",":cough:",":butler:",":alx:",":wut:","wut?","sudo make me a sandwich","much wow"
                ];
 
         randomAction = action[ Math.floor( Math.random() * action.length ) ];
