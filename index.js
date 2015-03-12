@@ -45,7 +45,6 @@ app.post('/', function(req, response) {
               "pokes", 
               "steals", 
               "shreds",
-              "urges", 
               "accidentally floods", 
               "deletes", 
               "drives over", 
