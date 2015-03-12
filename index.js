@@ -250,7 +250,6 @@ app.post('/', function(req, response) {
                "burrito",
                "HR violation",
                '"wut" look from Karen',
-               "+t +d",
                "flash talk",
                "commit message",
                "#wendycorrect",
@@ -268,9 +267,6 @@ app.post('/', function(req, response) {
                ":alx:",
                ":wut:",
                "wut?",
-               "sudo make me a sandwich",
-               "much wow",
-               ""
                ];
 
         randomAction = action[ Math.floor( Math.random() * action.length ) ];
