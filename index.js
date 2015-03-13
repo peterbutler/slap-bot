@@ -33,9 +33,7 @@ app.post('/', function(req, response) {
       'evan':'EVANZI',
       '@evan':'EVANZI',
       'peterbutler':'PETERBUTLER',
-      '@peterbutler':'PETERBUTLER',
-      '@clauzon':'SQUIREX2',
-      'clauzon':'SQUIREX2'
+      '@peterbutler':'PETERBUTLER'
   	}
 
 	action = [
@@ -163,7 +161,7 @@ app.post('/', function(req, response) {
               "a tremendous",
               "a sensational",
               "a gorgeous",
-              "a grand",›
+              "a grand",
               "a fabulous",
               "a bang tidy"
                ];
@@ -507,4 +505,3 @@ function sprintf() {
 
   return format.replace(regex, doFormat);
 }
-
