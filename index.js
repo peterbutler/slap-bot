@@ -286,7 +286,7 @@ app.post('/', function(req, response) {
           randomMessage = 'tries to slap %s, but is thwarted and gets slapped with ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
         }
         
-        if ( 'alx' == slappee || '@alx' = slappee ) {
+        if ( 'alx' == slappee || '@alx' == slappee ) {
           YoToken = '9267e786-f71d-4d5c-9ab5-95ac8ac03bc7';
           YoUser = 'ALXBLOCK';
 
