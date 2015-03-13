@@ -286,21 +286,23 @@ app.post('/', function(req, response) {
           randomMessage = 'tries to slap %s, but is thwarted and gets slapped with ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
         }
         
-        if ( 'alx' == slappee ) {
+        if ( 'alx' == slappee || '@alx' = slappee ) {
           YoToken = '9267e786-f71d-4d5c-9ab5-95ac8ac03bc7';
           YoUser = 'ALXBLOCK';
+
           request.post(
-    		'http://api.justyo.co/yo/',
-    		{ form: { 'api_token': YoToken,
-              	'username': YoUser,
-            	}
-    	},
-    	function (error, response, body) {
-        	if (!error && response.statusCode == 200) {
-            	console.log(body);
-        }
-    }
-);
+            'http://api.justyo.co/yo/',
+            { form: {
+                  'api_token': YoToken,
+                  'username': YoUser,
+                }
+            },
+            function (error, response, body) {
+              if (!error && response.statusCode == 200) {
+                console.log(body);
+              }
+            }
+          );
         }
 
 	request.post({
