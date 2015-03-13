@@ -34,6 +34,8 @@ app.post('/', function(req, response) {
       '@evan':'EVANZI',
       'peterbutler':'PETERBUTLER',
       '@peterbutler':'PETERBUTLER',
+      'andreabadgley':'HONEYBADGLEY',
+      '@andreabadgley':'HONEYBADGLEY',
       'clauzon':'SQUIREX2',
       '@clauzon':'SQUIREX2'
   	}
