@@ -25,8 +25,8 @@ app.post('/', function(req, response) {
     	'alx':'ALXBLOCK',
     	'@alx':'ALXBLOCK',
     	'schwuk':'SCHWUK',
-    	'@schwuk':'SCHWUK'
-      'erica':'ECLAIRAVERSE'
+    	'@schwuk':'SCHWUK',
+      'erica':'ECLAIRAVERSE',
       '@erica':'ECLAIRAVERSE'
   	}
 
