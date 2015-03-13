@@ -19,6 +19,12 @@ app.post('/', function(req, response) {
 
 	slapper = req.body.user_name;
 	slappee = req.body.text;
+	
+	yoUsers = {
+    	'ian':'IANNUTTALL',
+    	'alx':'ALXBLOCK',
+    	'schwuk':'SCHWUK'
+  	}
 
 	action = [
               "slaps",
@@ -286,9 +292,9 @@ app.post('/', function(req, response) {
           randomMessage = 'tries to slap %s, but is thwarted and gets slapped with ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
         }
         
-        if ( 'alx' == slappee || '@alx' == slappee ) {
+        if ( yoUsers.hasOwnProperty( slappee ) ) {
           YoToken = '9267e786-f71d-4d5c-9ab5-95ac8ac03bc7';
-          YoUser = 'ALXBLOCK';
+          YoUser = yoUsers[ slappee ];
 
           request.post(
             'http://api.justyo.co/yo/',
