@@ -22,8 +22,11 @@ app.post('/', function(req, response) {
 	
 	yoUsers = {
     	'ian':'IANNUTTALL',
+    	'@ian':'IANNUTTALL',
     	'alx':'ALXBLOCK',
-    	'schwuk':'SCHWUK'
+    	'@alx':'ALXBLOCK',
+    	'schwuk':'SCHWUK',
+    	'@schwuk':'SCHWUK'
   	}
 
 	action = [
