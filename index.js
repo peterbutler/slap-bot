@@ -1,5 +1,6 @@
 
 var express = require('express');
+var request = require('request');
 var app = express();
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
@@ -283,6 +284,23 @@ app.post('/', function(req, response) {
 		// Chris misses 20% of the time
         if ( Math.random() < .05 && slapper == 'clauzon' ){
           randomMessage = 'tries to slap %s, but is thwarted and gets slapped with ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
+        }
+        
+        if ( 'alx' == slappee ) {
+          YoToken = '9267e786-f71d-4d5c-9ab5-95ac8ac03bc7';
+          YoUser = 'ALXBLOCK';
+          request.post(
+    		'http://api.justyo.co/yo/',
+    		{ form: { 'api_token': YoToken,
+              	'username': YoUser,
+            	}
+    	},
+    	function (error, response, body) {
+        	if (!error && response.statusCode == 200) {
+            	console.log(body);
+        }
+    }
+);
         }
 
 	request.post({
