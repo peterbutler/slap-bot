@@ -34,8 +34,8 @@ app.post('/', function(req, response) {
       '@evan':'EVANZI',
       'peterbutler':'PETERBUTLER',
       '@peterbutler':'PETERBUTLER',
-      'clauzon':'SQUIREX2',
-      '@clauzon':'SQUIREX2'
+      '@clauzon':'SQUIREX2',
+      'clauzon':'SQUIREX2'
   	}
 
 	action = [
