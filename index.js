@@ -37,6 +37,8 @@ app.post('/', function(req, response) {
       'andreabadgley':'HONEYBADGLEY',
       '@andreabadgley':'HONEYBADGLEY',
       'clauzon':'SQUIREX2',
+      'breezyskies':'BREEZYSKIES',
+      '@breezyskies':'BREEZYSKIES',
       '@clauzon':'SQUIREX2'
   	}
 
