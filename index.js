@@ -18,7 +18,7 @@ app.post('/', function(req, response) {
 
 	slapper = req.body.user_name;
 	slappee = req.body.text;
-	
+
 	yoUsers = {
     	'ian':'IANNUTTALL',
     	'@ian':'IANNUTTALL',
@@ -34,19 +34,19 @@ app.post('/', function(req, response) {
       '@evan':'EVANZI',
       'peterbutler':'PETERBUTLER',
       '@peterbutler':'PETERBUTLER',
+      'peter':'PETERBUTLER',
       'andreabadgley':'HONEYBADGLEY',
       '@andreabadgley':'HONEYBADGLEY',
       'clauzon':'SQUIREX2',
+      '@clauzon':'SQUIREX2',
       'breezyskies':'BREEZYSKIES',
-      '@breezyskies':'BREEZYSKIES',
-      '@clauzon':'SQUIREX2'
+      '@breezyskies':'BREEZYSKIES'
   	}
 
 	action = [
               "slaps",
               "considers highlighting",
               "nudges",
-              "whacks",
               "imprints",
               "whacks",
               "bangs",
@@ -75,8 +75,13 @@ app.post('/', function(req, response) {
               "rickrolls",
               "recites Vogon poetry for",
               "pushes",
+              "DMs",
+              "tweets at",
+              "WordPresses",
+              "edits",
               "feeds",
-              "pings"];
+              "pings"
+              ];
 
         superlative = [
               "a large and terrifyingly cute plush",
@@ -267,11 +272,14 @@ app.post('/', function(req, response) {
                "Spittle cough",
                "MattChat",
                "404 error",
-               "Timbuktu bag",
+               "Timbuk2 bag",
                "fuck off bear",
                "ittybunny hug",
                "burrito",
                "HR violation",
+               "Fauxgo",
+               "WordPress logo",
+               "proxy server",
                '"wut" look from Karen',
                "flash talk",
                "commit message",
@@ -286,6 +294,7 @@ app.post('/', function(req, response) {
                ":cube:",
                ":coolio:",
                ":cough:",
+               ":cube:",
                ":butler:",
                ":alx:",
                ":wut:",
@@ -307,7 +316,7 @@ app.post('/', function(req, response) {
         if ( Math.random() < .05 && slapper == 'clauzon' ){
           randomMessage = 'tries to slap %s, but is thwarted and gets slapped with ' + randomSuperlative + ' ' + randomObject + ' by alx instead!';
         }
-        
+
         if ( yoUsers.hasOwnProperty( slappee ) ) {
           YoToken = '9267e786-f71d-4d5c-9ab5-95ac8ac03bc7';
           YoUser = yoUsers[ slappee ];
