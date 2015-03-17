@@ -47,6 +47,7 @@ app.post('/', function(req, response) {
 
 	action = [
               "slaps",
+              "punches",
               "considers highlighting",
               "nudges",
               "imprints",
