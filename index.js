@@ -53,7 +53,6 @@ app.post('/', function(req, response) {
               "imprints",
               "whacks",
               "bangs",
-              "spanks",
               "strikes",
               "clouts",
               "cuffs",
